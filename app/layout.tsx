@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,7 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rush Staffing | Industrial & Quality Control Staffing in Anderson, IN",
+  title: {
+    default: "Rush Staffing | Industrial & Quality Control Staffing in Anderson, IN",
+    template: "%s | Rush Staffing",
+  },
   description:
     "Rush Staffing places trained quality-control inspectors with automotive companies and dependable workers with factories of every kind. Based in Anderson, Indiana. Call (765) 641-2355.",
 };
@@ -24,7 +29,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
