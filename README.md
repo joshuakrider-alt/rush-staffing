@@ -6,6 +6,17 @@ automotive industry plus general factory staffing.
 
 Built with Next.js 16 + React 19 + Tailwind CSS v4.
 
+## Pages
+
+| Route | Purpose |
+|--------|---------|
+| `/` | Home — hero, stats, paths into the site |
+| `/employers` | Employer staffing services & engagement models |
+| `/job-seekers` | Apply path, common roles, perks |
+| `/industries` | Automotive QC, manufacturing, warehousing |
+| `/about` | Company story, office details, testimonials |
+| `/contact` | Contact form (`?type=employer` / `?type=seeker`) |
+
 ## Run it
 
 ```bash

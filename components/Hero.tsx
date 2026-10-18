@@ -5,7 +5,7 @@ const badges = ["24/7 dispatch", "Locally owned", "Temp \u2022 Temp-to-hire \u20
 
 export default function Hero() {
   return (
-    <section id="top" className="bg-brand-50 pt-16">
+    <section className="bg-brand-50 pt-16">
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 pt-12 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:pb-24 lg:pt-20">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent-600">
@@ -21,13 +21,13 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
-              href="#contact"
+              href="/employers"
               className="rounded-md bg-brand-900 px-6 py-3 text-center text-sm font-bold text-white transition-colors hover:bg-brand-800"
             >
               I need workers
             </Link>
             <Link
-              href="#job-seekers"
+              href="/job-seekers"
               className="rounded-md border-2 border-brand-900 px-6 py-3 text-center text-sm font-bold text-brand-900 transition-colors hover:bg-brand-900 hover:text-white"
             >
               Find work
